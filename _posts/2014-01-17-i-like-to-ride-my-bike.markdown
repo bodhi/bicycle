@@ -6,7 +6,7 @@ layout: default
 Riding home today in the 38º heat, I was reminded again why I so enjoy
 riding my bicycle to work.
 
-It's not the excercise, or being out in the sun (ahahahaha, 38ºC,
+It's not the exercise, or being out in the sun (ahahahaha, 38ºC,
 remember?), or the fact that I'm using [the most efficient transport
 mechanism known][human-power], or even the feeling of riding past a
 bus on a cold evening, rolling through the cloud of warmth surrounding
