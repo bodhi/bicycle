@@ -1,0 +1,280 @@
+body {
+  /* background: url(baseline.png); */
+}
+
+body, section, article, time, code, pre, h1, h2, h3, p, ol, ul, li, aside, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body, article {
+  margin:0; padding:0;
+  font-family: "Book Antiqua", Georgia, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+a {
+  color: #09F;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  padding: 0.1em 0.2em;
+  margin: -0.1em -0.2em;
+  border-radius: .2em;
+  -webkit-border-radius: .2em;
+  -moz-border-radius: .2em;
+}
+
+a:visited {
+  color: #90F;
+}
+
+a:hover {
+  background-color: #09F;
+  color: white;
+}
+
+article {
+  margin: 50px 0;
+}
+
+article, section, footer, div.footnotes, div.citation {
+  display: -webkit-box;
+  box-orient: vertical;
+  box-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  margin-bottom: 48px;
+}
+
+article > p, article > ol, article > ul, article > aside, article > div.highlight, article > blockquote, div.footnotes > ol, div.citation {
+  width: 600px;
+  line-height: 25px;
+}
+
+article > a, article > blockquote, article > ol, article > ul, article > aside {
+  margin: 25px 0 25px;
+  display: block;
+}
+
+article > hr, div.footnotes > hr {
+  margin: 19px 0 0;
+  padding-bottom: 30px;
+}
+
+article > a {
+  margin: 24px 0 25px;
+}
+
+article > blockquote {
+  width: 570px;
+  font-style: italic;
+}
+
+blockquote blockquote {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-style: normal;
+}
+
+article > blockquote em {
+  font-weight: bold;
+}
+
+article li p {
+  padding-left: 0;
+  width: auto;
+}
+
+article div.highlight {
+  width: 100%;
+  background: #F9F9F9 !important;
+  background: rgba(240, 240, 240, 0.6) !important;
+  font-size: 17px;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+
+  padding: 7px 0 17px;
+  margin: 17px 0 7px;
+}
+
+article pre {
+  width: 570px;
+  margin: 0;
+}
+
+article p code, article h3 code {
+  padding: 0.1em 0.2em;
+  margin: -0.1em 0;
+  border-radius: .2em;
+  -webkit-border-radius: .2em;
+  -moz-border-radius: .2em;
+  border: 1px solid #EEE;
+  background: #F5F5F5 !important;
+  font-size: 17px;
+}
+
+article a:hover code {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+article code {
+  font-family: Inconsolata;
+}
+
+article p + p {
+  text-indent: 15px;
+  
+  margin-top: 15px;
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 36px;
+  letter-spacing: -1px;
+  line-height: 36px;
+  padding-top: 5px;
+  margin-bottom: 66px;
+}
+
+h2, h3 {
+  font-size: 24px;
+  padding-top: 53px;
+  margin-bottom: 11px;
+}
+
+article h3 {
+  font-style: italic;
+}
+
+article h3 code {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+h1 + time, h2 + time, h3 + time {
+  font-size: 16px;
+  color: #999;
+  display: block;
+  text-align: center;
+  height: 25px;
+  margin: -48px 0 23px;
+}
+
+h2 + time, h3 + time {
+  margin: 4px 0 -2px;
+}
+
+sup {
+  font-size: 14px;
+  line-height: 0;
+}
+
+aside, div.footnotes, div.citation {
+  width: 570px;
+  font-size: 16px;
+  color: #999;
+}
+
+div.citation {
+  margin-top: -24px;
+  margin-bottom: 24px;
+
+  width: 385px;
+  margin-left: 385px;
+
+}
+
+hr {
+  width: 300px;
+  border: none;
+  border-top: 1px solid #CCC;
+}
+
+div.footnotes {
+  padding-bottom: 2px;
+}
+
+div.footnotes li p {
+  display: inline;
+}
+
+footer p {
+  width: 450px;
+  text-align: center;
+  color: #999;
+  line-height: 25px;
+  padding-top: 2px;
+}
+
+footer a {
+  color: #9CF;
+}
+
+footer a:visited {
+  color: #C9F;
+}
+
+footer a:hover {
+  background: #9CF;
+  color: white;
+}
+
+footer a:hover:visited {
+  background: #C9F;
+/*  color: white; */
+}
+
+article#front {
+  margin-bottom: 13px;
+}
+
+article#front p {
+  font-size: 24px;
+  margin: -2px 0 2px;
+
+  width: 450px;
+  text-align: center;
+  font-style: italic;
+}
+
+#recent {
+  padding: 12px 0 11px;
+}
+
+#recent h2 {
+  margin-bottom: 15px;
+}
+
+#recent article {
+  margin: 0 0 4px;
+}
+
+#recent article h3 {
+  margin: 0;
+  padding-top: 19px;
+  height: auto;
+}
+
+#archive h1 {
+  padding-top: 55px;
+  margin-bottom: 43px;
+}
+
+.link h3 {
+  display: inline;
+  font-size: 18px;
+}
+
+.link time {
+  display: inline;
+}

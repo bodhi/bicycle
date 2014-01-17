@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset='utf-8'>
+
+    <title>Bicycle. Bicycle.</title>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" href="/style.css" type="text/css">
+  </head>
+
+  <body>
+    <article id="front">
+    {{ content }}
+    </article>
+
+    <section id="recent">
+
+    {% for page in site.posts limit:20 %}
+    <article class={{page.layout}}>
+      <h3><a href="{{page.url}}">{{ page.title }}</a></h3>
+      {% if page.date %}
+      <time>
+        {% if page.layout == "link" %}
+        Linked to
+        {% else %}
+        Published
+        {% endif %}
+        on {{ page.date | date_to_long_string }}
+      </time>
+      {% endif %}
+      {{page.intro | markdown }}
+    </article>
+    {% endfor %}
+    </section>
+
+<!--
+    <footer>
+      <p>There may be more in the <a href="/archive">archive</a>.</p>
+    </footer>
+-->
+  </body>
+</html>
